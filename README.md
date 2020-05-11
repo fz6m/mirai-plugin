@@ -1,2 +1,3 @@
 # mirai-plugin
-基于 Mirai 的插件
+## 自定义表情包
+明天写。

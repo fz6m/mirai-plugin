@@ -1,0 +1,6 @@
+name: "imageCustom"
+author: "fz6m"
+version: "0.1"
+main: "com.fz6m.plugin.ImageCustomPluginMain"
+info: "stamp custom Web: https://github.com/fz6m"
+depends: []
