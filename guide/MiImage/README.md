@@ -10,7 +10,7 @@
 
    # 切换自己的表情包底图
    img 表情包别名
-   
+
    # 查看表情包列表
    img list
    ```
@@ -47,8 +47,10 @@
 
     注意：图片目前只支持 `.jpg` 格式，`.png` 的渲染出来太大。
 3. 为了更好的选定配置 `config.ini` 内的参数取值，一种参考图如下：
-![](https://raw.githubusercontent.com/fz6m/Private-picgo/moe/img/20200512173354.jpg)
-注：看不了图说明 DNS 被污染了，请配置 [Github Hosts](https://blog.csdn.net/qq_21567385/article/details/105951488) 或者开启代理。
+   
+    <img src='https://raw.githubusercontent.com/fz6m/Private-picgo/moe/img/20200512173354.jpg' width='50%'/>
+
+    注：看不了图说明 DNS 被污染了，请配置 [Github Hosts](https://blog.csdn.net/qq_21567385/article/details/105951488) 或者开启代理。
 4. 也就是说，在画图工具内编辑图片，用鼠标比划一下，我们就可以这样得到（这只是一个例子）：
     参数 | 说明
     :-: | :-
