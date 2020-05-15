@@ -1,12 +1,14 @@
 ## 自定义表情包
 ### 使用方法
-1. 直接在 [releases](https://github.com/fz6m/mirai-plugin/releases) 中下载插件压缩包
-2. 解压后将 `imageCustom` 插件配置文件夹和插件本身 `.jar` 包一起放到 mirai 的插件目录即可
+1. 直接在 [releases](https://github.com/fz6m/mirai-plugin/releases) 中下载插件
+2. `v0.2`：将 `.jar` 包放到 mirai 的插件目录即可
+   
+   `v0.1`：解压后将 `imageCustom` 插件配置文件夹和插件本身 `.jar` 包一起放到 mirai 的插件目录即可
 3. 之后在群内可以使用如下指令：
    ```yml
    # 制造表情包
    xxx.jpg
-   XXX.jpg
+   XXX.JPG
 
    # 切换自己的表情包底图
    img 表情包别名
