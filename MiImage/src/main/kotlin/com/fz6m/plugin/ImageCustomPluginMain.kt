@@ -2,6 +2,7 @@ package com.fz6m.plugin
 
 
 import kotlinx.coroutines.launch
+import net.mamoe.mirai.console.command.registerCommand
 import net.mamoe.mirai.console.plugins.PluginBase
 import net.mamoe.mirai.event.subscribeGroupMessages
 import net.mamoe.mirai.message.data.At
@@ -24,6 +25,26 @@ object ImageCustomPluginMain : PluginBase() {
             logger.info("自定义表情资源目录：$path")
         } catch (e: Exception) {
             logger.info("未自定义表情包资源目录，将使用默认值")
+        }
+//        initialization
+        try {
+            val cache: Boolean = config.getBoolean("cache")
+            if (!cache) {
+                Cache.initialization()
+            }
+        } catch (e: Exception) {
+            logger.info("第一次运行，初始化图片库 ./plugins/imageCustom/image_data")
+            Cache.initialization()
+        }
+
+        registerCommand {
+            name = "imgCustom"
+            alias = listOf("img", "custom", "stamp", "biaoqing")
+            description = "表情包自定义插件说明"
+            usage = "\n1. 第一次初始化后，默认使用的表情存放在 ./plugins/imageCustom/image_data 中\n" +
+                    "2. 如需重新初始化，请使 ./plugins/imageCustom/settings.yml 中 cache 为 false \n" +
+                    "3. 添加表情方法见 ./plugins/imageCustom/添加表情方法.pdf"
+            onCommand { return@onCommand false }
         }
 
         subscribeGroupMessages {
@@ -69,3 +90,5 @@ object ImageCustomPluginMain : PluginBase() {
         logger.info("表情包自定义插件 已加载")
     }
 }
+
+
