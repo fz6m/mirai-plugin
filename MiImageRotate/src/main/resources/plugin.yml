@@ -1,0 +1,6 @@
+name: "ImageRotate"
+author: "fz6m"
+version: "0.1"
+main: "com.fz6m.plugin.ImageRotate"
+info: "Random rotation picture Web: https://github.com/fz6m"
+depends: []
